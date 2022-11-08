@@ -6,7 +6,7 @@
 3. Brittany Trieu
 4. Victor Ung
 
-### Propose Application and Goal
+### Proposed Application and Goal
 Our proposed application is a game with a TUI. The game we're trying to clone is Guitar Hero, where there will be four columns of "guitar frets" that will be running down
 the terminal. The "guitar frets" can come down as either individual ones or long rows. The player will have to press (or hold) the key corresponding to that column at the 
 moment it reaches the bottom. We plan on implementing random levels ranging from easy, medium, and hard difficulties. The difficulty will be expressed by the speed of 
