@@ -14,9 +14,9 @@ import Brick
   , customMain, neverShowCursor
   , continue, halt
   , hLimit, vLimit, vBox, hBox
-  , padRight, padLeft, padTop, padAll, Padding(..)
+  , padRight, padLeft, padTop, padTopBottom, padAll, Padding(..)
   , withBorderStyle
-  , str
+  , str 
   , attrMap, withAttr, emptyWidget, AttrName, on, fg
   , (<+>)
   )
@@ -60,8 +60,9 @@ drawUI g =
   [ C.center $ padRight (Pad 2) (drawStats g) <+> drawGrid g ]
 
 drawStats :: Game -> Widget Name
-drawStats g = hLimit 11
+drawStats g = hLimit 18
   $ vBox [ drawScore (g ^. score)
+         , drawHelp
          , padTop (Pad 2) $ drawGameOver (g ^. finished)
          , padTop (Pad 4) $ drawReadySet (g ^. paused)
          ]
@@ -114,6 +115,27 @@ drawCell Key2 = withAttr col2Attr cw
 drawCell Key3 = withAttr col3Attr cw
 drawCell Key4 = withAttr col4Attr cw
 drawCell Empty = withAttr emptyAttr cw
+
+drawHelp :: Widget Name
+drawHelp =
+  withBorderStyle BS.unicodeBold
+    $ B.borderWithLabel (str "Help")
+    $ padTopBottom 1
+    $ vBox
+    $ map (uncurry drawKeyInfo)
+      [ ("first"   , "z")
+      , ("second"  , "x")
+      , ("third"   , "n")
+      , ("fourth"   , "m")
+      , ("Restart", "r")
+      , ("Pause"  , "p")
+      , ("Quit"   , "q")
+      ]
+
+drawKeyInfo :: String -> String -> Widget Name
+drawKeyInfo action keys =
+  padRight Max (padLeft (Pad 1) $ str action)
+    <+> padLeft Max (padRight (Pad 1) $ str keys)
 
 cw :: Widget Name
 cw = str "  "
