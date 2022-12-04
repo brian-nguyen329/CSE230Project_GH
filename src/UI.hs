@@ -41,7 +41,7 @@ data Tick = Tick
 -- if we call this "Name" now.
 type Name = ()
 
-data Cell = Col1 | Col2 | Col3 | Col4 | Key1 | Key2 | Key3 | Key4 | Food | Empty
+data Cell = Col1 | Col2 | Col3 | Col4 | Key1 | Key2 | Key3 | Key4 | Empty
 
 -- Handling events
 
