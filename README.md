@@ -1,4 +1,4 @@
-# CSE230Project_GH
+# CSE 230 Project - TILES
 
 ### Overview
 
