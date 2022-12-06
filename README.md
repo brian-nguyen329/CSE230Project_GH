@@ -1,4 +1,4 @@
-# CSE 230 Project - TILES
+# TILES - CSE 230 Final Project
 
 ### Overview
 
