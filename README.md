@@ -35,6 +35,11 @@ The game begins by asking the player what difficulty they want to play at: 'Easy
 4. Score multiplier
 5. Users can import own music
 
+## Testing
+We created Unit Tests using the Tasty, inspired by the HUnit package. Board.hs, Logic.hs, and Graphic.hs contain unit tests categorized by what they're mainly dealing with. All of these tests are aggregated and run in Test.hs
+
+Run <code> stack test </code> to run the Test Suite and se
+
 ## Contributions
 Justin: 
 Core functionality such as: tiles falling down and the graphics of the tiles. Optimized the smoothness of the game by debugging unnecessary features.
