@@ -40,6 +40,9 @@ We created Unit Tests using the Tasty, inspired by the HUnit package. Board.hs, 
 
 Run <code> stack test </code> to run the Test Suite.
 
+## YouTube Video
+https://www.youtube.com/watch?v=NGTNY2NXSnY&ab_channel=BrianNguyen
+
 ## Contributions
 Justin: 
 Core functionality such as: tiles falling down and the graphics of the tiles. Optimized the smoothness of the game by debugging unnecessary features.
