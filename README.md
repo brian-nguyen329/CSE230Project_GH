@@ -8,7 +8,9 @@ The goal of CSE230's Final Project is to create a Haskell line application from 
 
 The game begins by asking the player what difficulty they want to play at: 'Easy', 'Medium', and 'Hard'. Each difficulty is associated with a specific speed that respectively gets faster. There is a main grid with four columns of 'tiles' that will run down the terminal. Starting from the left, the tiles will be colored: red, yellow, cyan, and magenta. As they reach the bottom of the grid, the player must press a specific key associated to the column. The guide on which key to press can be found when you run the game. The player has 3 lives, and if they fail to time a tile correctly, they will lose a life. The score is simply a tally of how many tiles the player times correctly before the player runs out of lives.
 
-[insert GIF]
+![Screenshot](tiles.png)
+
+## How to play
 
 ### Set up to use Euterpea
 
@@ -18,9 +20,12 @@ We used FluidSynth for the synthesizer and downloaded it following this [site](h
 
 ### If you cannot compile Euterpea
 
-If Euterpea is unable to compile, you can comment out the extra dependencies in stack.yaml. In tiles.cabal, comment out lines 23 and 35. In Game.hs, you can comment out lines 24, 27-47, 90, and 105-108.
+If Euterpea is unable to compile, you can:
+1. Comment out the 'extra-dependencies in stack.yaml (lines 5-10).
+2. In tiles.cabal, comment out Euterpea dependency (lines 23 and 35).
+3. In Game.hs, comment out lines 24, 27-47, 90, and 105-108.
 
-### How to Play
+### Commands To Run
 
 1. Install stack
 2. Clone repo
