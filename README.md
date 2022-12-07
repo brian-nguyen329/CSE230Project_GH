@@ -10,6 +10,16 @@ The game begins by asking the player what difficulty they want to play at: 'Easy
 
 [insert GIF]
 
+### Set up to use Euterpea
+
+To use Euterpea, you must have a MIDI software synthesizer on your machine. Windows typically has one already, but for Mac/Linux users, they can install [SimpleSynth](https://github.com/notahat/simplesynth) (Mac) or [FluidSynth](https://www.fluidsynth.org/) (Mac/Linux). After installing the synthesizer, you must have it open in the background before starting the game. Otherwise, Euterpea will not be able to function without detecting any sound devices. More details can be found on Euterpea's [website](https://www.euterpea.com/).
+
+We used FluidSynth for the synthesizer and downloaded it following this [site](https://github.com/FluidSynth/fluidsynth/wiki/Download). In order to run the program, in the command line, type the command <code>fluidsynth SoundFont.sf2</code> where SoundFont.sf2 is a SoundFont file. You may download one from the internet to test. [Here](https://sites.google.com/view/hed-sounds/salamander-c5-light?pli=1) is a link to download the SoundFont file we used to test. Once you have it running, open another terminal to play the game.
+
+### If you cannot compile Euterpea
+
+If Euterpea is unable to compile, you can comment out the extra dependencies in stack.yaml. In tiles.cabal, comment out lines 23 and 35. In Game.hs, you can comment out lines 24, 27-47, 90, and 105-108.
+
 ### How to Play
 
 1. Install stack
@@ -45,10 +55,6 @@ The game begins by asking the player what difficulty they want to play at: 'Easy
 We created Unit Tests using the Tasty, inspired by the HUnit package. Board.hs, Logic.hs, and Graphic.hs contain unit tests categorized by what they're mainly dealing with. All of these tests are aggregated and run in Test.hs
 
 Run <code>stack test</code> to run the Test Suite.
-
-## Euterpea
-
-To use Euterpea, you must have a MIDI software synthesizer on your machine. Windows typically has one already, but for Mac/Linux users, they can install [SimpleSynth](https://github.com/notahat/simplesynth) (Mac) or [FluidSynth](https://www.fluidsynth.org/) (Mac/Linux). After installing the synthesizer, you must have it open in the background before starting the game. Otherwise, Euterpea will not be able to function without detecting any sound devices. More details can be found on Euterpea's [website](https://www.euterpea.com/). For FluidSynth, in order to run the program, you use the command <code>fluidsynth SoundFont.sf2</code> where SoundFont.sf2 is a SoundFont file. You may download one from the internet to test. [Here](https://sites.google.com/view/hed-sounds/salamander-c5-light?pli=1) is a link to download the SoundFont file we used to test.
 
 ## YouTube Video
 
