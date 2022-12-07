@@ -20,12 +20,14 @@ To use Euterpea, you must have a MIDI software synthesizer on your machine. Wind
 
 We used FluidSynth for the synthesizer and downloaded it following this [site](https://github.com/FluidSynth/fluidsynth/wiki/Download). In order to run the program, in the command line, type the command <code>fluidsynth SoundFont.sf2</code> where SoundFont.sf2 is a SoundFont file. You may download one from the internet to test. [Here](https://sites.google.com/view/hed-sounds/salamander-c5-light?pli=1) is a link to download the SoundFont file we used to test. Once you have it running, open another terminal to play the game.
 
-### If you cannot compile Euterpea
+### If you cannot compile Euterpea successfully
 
-If Euterpea is unable to compile, you can:
+If Euterpea is unable to compile after running the commands below, you can:
 1. In stack.yaml, omment out the 'extra-dependencies' (lines 5-10).
 2. In tiles.cabal, comment out Euterpea dependency (lines 23 and 35).
 3. In Game.hs, comment out lines 24, 27-47, 90, and 105-108.
+
+This will remove all audio components and allow you to easily run the game.
 
 ### Commands To Run
 
