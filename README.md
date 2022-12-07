@@ -34,3 +34,16 @@ The game begins by asking the player what difficulty they want to play at: 'Easy
 3. Different modes of the game (endless tile mode - no lives)
 4. Score multiplier
 5. Users can import own music
+
+## Contributions
+Justin: 
+1. Test
+
+Brian: 
+1. Test
+
+Brittany: 
+1. Test
+
+Victor: 
+1. Test
