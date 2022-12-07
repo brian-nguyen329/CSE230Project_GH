@@ -37,13 +37,13 @@ The game begins by asking the player what difficulty they want to play at: 'Easy
 
 ## Contributions
 Justin: 
-1. Core functionality such as: tiles falling down and the graphics of the tiles. Optimized the smoothness of the game by debugging unnecessary features.
+Core functionality such as: tiles falling down and the graphics of the tiles. Optimized the smoothness of the game by debugging unnecessary features.
 
 Brian: 
-1. Helped in creating graphics for the keys (which are used to dilineate where the tiles stop). Created the test suite frame work and test cases. Set up presentation slides and materials.
+Helped in creating graphics for the keys (which are used to dilineate where the tiles stop). Created the test suite frame work and test cases. Set up presentation slides and materials.
 
 Brittany: 
-1. Helped in creating the test suite, graphics, and tried to get background music working. Ran the demo of the game for presentation.
+Helped in creating the test suite, graphics, and tried to get background music working. Ran the demo of the game for presentation.
 
 Victor: 
-1. Enhanced game elements such as: a working score system, difficulty settings, a nice UI for stats and legend. Worked on the user feedback on key presses.
+Enhanced game elements such as: a working score system, difficulty settings, a nice UI for stats and legend. Worked on the user feedback on key presses.
