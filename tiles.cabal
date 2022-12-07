@@ -1,0 +1,60 @@
+name:                tiles
+version:             0.1.4.0
+homepage:            https://github.com/brian-nguyen329/CSE230Project_GH
+author:              Brian Nguyen, Justin Nguyen, Brittany Trieu, Victor Ung
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Tiles
+                     , UI.Difficulty
+                     , UI.Game
+  build-depends:       base >= 4.7 && < 5
+                     , brick
+                     , containers
+                     , lens
+                     , linear
+                     , random
+                     , transformers
+                     , vty
+                     , Euterpea
+  default-language:    Haskell2010
+
+executable tiles
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base >= 4.7 && < 5
+                     , directory
+                     , filepath
+                     , optparse-applicative
+                     , tiles
+                     , Euterpea
+  default-language:    Haskell2010
+
+test-suite test
+  default-language: Haskell2010
+  type:             exitcode-stdio-1.0
+  hs-source-dirs:   tests
+  Default-Extensions: OverloadedStrings
+  main-is:          Test.hs
+  build-depends:    base, 
+                    containers, 
+                    mtl,
+                    filepath,
+                    QuickCheck,
+                    tasty,
+                    tasty-hunit,
+                    tasty-quickcheck,
+                    process,
+                    random,
+                    lens,
+                    linear,
+                    tiles,
+                    vty,
+                    brick
+  other-modules:    Board,
+                    Logic
