@@ -23,7 +23,8 @@ We used FluidSynth for the synthesizer and downloaded it following this [site](h
 ### If you cannot compile Euterpea successfully
 
 If Euterpea is unable to compile after running the commands below, you can:
-1. In stack.yaml, omment out the 'extra-dependencies' (lines 5-10).
+
+1. In stack.yaml, comment out the 'extra-dependencies' (lines 5-10).
 2. In tiles.cabal, comment out Euterpea dependency (lines 23 and 35).
 3. In Game.hs, comment out lines 24, 27-47, 90, and 105-108.
 
