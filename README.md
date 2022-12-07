@@ -8,7 +8,9 @@ The goal of CSE230's Final Project is to create a Haskell line application from 
 
 The game begins by asking the player what difficulty they want to play at: 'Easy', 'Medium', and 'Hard'. Each difficulty is associated with a specific speed that respectively gets faster. There is a main grid with four columns of 'tiles' that will run down the terminal. Starting from the left, the tiles will be colored: red, yellow, cyan, and magenta. As they reach the bottom of the grid, the player must press a specific key associated to the column. The guide on which key to press can be found when you run the game. The player has 3 lives, and if they fail to time a tile correctly, they will lose a life. The score is simply a tally of how many tiles the player times correctly before the player runs out of lives.
 
-![Screenshot](tiles.png)
+<p align="center">
+<img src="tiles.png" width="400" height="250" />
+</p>
 
 ## How to play
 
