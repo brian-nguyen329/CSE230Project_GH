@@ -13,8 +13,8 @@ The game begins by asking the player what difficulty they want to play at: 'Easy
 1. Install stack
 2. Clone repo
 3. Go to root directory of project
-4. Run <code>stack install tiles</code>
-5. Run <code>tiles</code>
+4. Run <code>stack build</code>
+5. Run <code>stack exec tiles</code>
 
 ## Project Goals
 
