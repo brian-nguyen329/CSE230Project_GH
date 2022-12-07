@@ -38,7 +38,7 @@ The game begins by asking the player what difficulty they want to play at: 'Easy
 ## Testing
 We created Unit Tests using the Tasty, inspired by the HUnit package. Board.hs, Logic.hs, and Graphic.hs contain unit tests categorized by what they're mainly dealing with. All of these tests are aggregated and run in Test.hs
 
-Run <code> stack test </code> to run the Test Suite and se
+Run <code> stack test </code> to run the Test Suite.
 
 ## Contributions
 Justin: 
